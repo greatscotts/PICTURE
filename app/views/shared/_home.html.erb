@@ -1,0 +1,54 @@
+<% provide(:title, 'Welcome to Kiiido.ph') %>
+
+<body id="signin" class="wraparound">
+ 
+ <home><%= link_to image_tag("http://i48.tinypic.com/slmtmr.png"), root_path  %></home>
+ <div id="alignments"> 
+  <div id="image"><a href="#"/> <img src="http://i49.tinypic.com/nb52d4.png" class="grayscale"/></a></div>    
+ 
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<%= link_to image_tag("http://i45.tinypic.com/103ykvr.png"), root_path  %>
+
+</div>
+<div id="alignment">
+ </br>
+</br>
+</br>
+</br>
+</br>
+<div class="rows">
+  <div class="span4 offset3">
+    <%= form_for(:session, :url=> sessions_path) do |f| %>
+
+      <%= f.label :username%>
+      <%= f.text_field :username %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+     <alignleft> <%= f.submit "Sign in", :class=> "btn btn-large btn-primary" %>
+    <% end %>
+      
+ </div>
+  </div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    <center>Join Us <%= link_to "Sign up now!", signup_path %>
+    </div>
+    </body>
