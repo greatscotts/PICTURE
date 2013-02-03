@@ -1,6 +1,6 @@
 <li id="<%= feed_item.id %>">
     <span class="content">
- <%= link_to image_tag current_user.image_url, :size => "50x50", :id=>"feedpicture" %>
+ <%= link_to image_tag @user.image_url, :size => "50x50", :id=>"feedpicture" %>
     <% if feed_item.is_reply_to? %>
       <%= link_to "@#{feed_item.in_reply_to.username}", feed_item.in_reply_to %>
       <%= wrap(feed_item.content.gsub(/\A^@\w+/, "")) %>
